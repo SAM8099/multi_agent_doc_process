@@ -186,3 +186,4 @@
   <li>AI agents can discover, describe, and call these endpoints automatically, enabling automation, integration, and AI-driven workflows.</li>
 </ol>
 
+<img src="image.png" alt="Project Structure Diagram" style="max-width: 100%; height: auto;" />
