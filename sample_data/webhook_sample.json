@@ -1,0 +1,37 @@
+{
+  "event_id": "a06c20f5-89aa-404e-88b1-5994982d5bff",
+  "event_type": "order_updated",
+  "timestamp": "1985-09-15T14:02:55",
+  "customer": {
+    "id": "dd4913a2-aafd-49c4-9285-9ba9e2292eb4",
+    "name": "Jerry Mendez",
+    "email": "bjackson@example.net",
+    "address": "9312 Daniel Cape Apt. 263, Robertsfort, FM 23655"
+  },
+  "order": {
+    "order_id": "88ba0bf9-f018-4b76-ba59-9b5b73b962d4",
+    "amount": 3748.2,
+    "currency": "USD",
+    "items": [
+      {
+        "item_id": "a652a180-983d-4203-a581-6b4e3534406a",
+        "product_name": "kitchen",
+        "quantity": 5,
+        "price": 460.27
+      },
+      {
+        "item_id": "767f50aa-4808-4100-aaef-b93bbf066ba7",
+        "product_name": "section",
+        "quantity": 3,
+        "price": 232.32
+      },
+      {
+        "item_id": "03e6d517-782a-47b5-8889-784573f7d868",
+        "product_name": "red",
+        "quantity": 4,
+        "price": 403.49
+      }
+    ]
+  },
+  "status": "pending"
+}

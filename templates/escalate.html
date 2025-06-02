@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Escalation Triggered</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e3f2fd;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 450px;
+            margin: 80px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px #90caf9;
+            padding: 2em;
+            text-align: center;
+        }
+        h2 {
+            color: #1976d2;
+            margin-bottom: 0.5em;
+        }
+        .escalate {
+            color: #1976d2;
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            font-weight: bold;
+        }
+        .details {
+            background: #bbdefb;
+            border-radius: 6px;
+            padding: 1em;
+            margin-top: 1em;
+            text-align: left;
+            font-family: monospace;
+        }
+        a {
+            display: inline-block;
+            margin-top: 1.5em;
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Escalation</h2>
+        <div class="escalate">A ticket escalation process has been triggered!</div>
+        <div class="details" id="escalate-details"></div>
+        <a href="/">Back to Home</a>
+    </div>
+    <script>
+        // Optionally, fetch escalation details from the backend if needed
+        fetch("/escalate", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({ key: "value" })  // Replace with your actual payload
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
+    </script>
+</body>
+</html>

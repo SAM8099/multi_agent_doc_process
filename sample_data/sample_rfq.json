@@ -1,0 +1,8 @@
+{
+  "product": "Widget X",
+  "quantity": 500,
+  "requested_by": "Alice Johnson",
+  "company": "Acme Corp",
+  "delivery_date": "2025-06-15",
+  "notes": "Please provide your best quote including shipping."
+}

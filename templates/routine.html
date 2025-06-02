@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Routine Ticket Created</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f8fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 80px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px #e0e0e0;
+            padding: 2em;
+            text-align: center;
+        }
+        h2 {
+            color: #1976d2;
+            margin-bottom: 0.5em;
+        }
+        .success {
+            color: #388e3c;
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        .details {
+            background: #e3f2fd;
+            border-radius: 6px;
+            padding: 1em;
+            margin-top: 1em;
+            text-align: left;
+            font-family: monospace;
+        }
+        a {
+            display: inline-block;
+            margin-top: 1.5em;
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Routine Ticket</h2>
+        <div class="success">Ticket created successfully!</div>
+        <div class="details" id="ticket-details"></div>
+        <a href="/">Back to Home</a>
+    </div>
+    <script>
+        // Optionally, fetch ticket details from the backend if needed
+        fetch("/routine", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({key: "value"})
+        })
+
+    </script>
+</body>
+</html>
