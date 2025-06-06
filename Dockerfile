@@ -6,12 +6,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy all code, templates, and sample data
-COPY app.py .
-COPY FlowBit ./FlowBit
-COPY templates ./templates
-COPY sample_data ./sample_data
-COPY .env .env
 
 EXPOSE 8000
 
